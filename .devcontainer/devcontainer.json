@@ -1,0 +1,22 @@
+{
+	"name": "Solana CTF Development",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml",
+				"serayuzgur.crates",
+				"vadimcn.vscode-lldb",
+				"ms-vscode.hexeditor"
+			],
+			"settings": {
+				"rust-analyzer.checkOnSave.command": "clippy",
+				"editor.formatOnSave": true
+			}
+		}
+	},
+	"forwardPorts": [8899, 8900]
+}
